@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Tutorials</title>
-    <link>/2020_stri_introR/tags/</link>
+    <link>/courses/2020_stri_introR/tags/</link>
     <description>Recent content in Tags on Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Jul 2013 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="/2020_stri_introR/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/courses/2020_stri_introR/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>plot</title>
-      <link>/2020_stri_introR/tags/plot/</link>
+      <link>/courses/2020_stri_introR/tags/plot/</link>
       <pubDate>Tue, 23 Jul 2013 21:13:14 -0500</pubDate>
       
-      <guid>/2020_stri_introR/tags/plot/</guid>
+      <guid>/courses/2020_stri_introR/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>/2020_stri_introR/tags/r-markdown/</link>
+      <link>/courses/2020_stri_introR/tags/r-markdown/</link>
       <pubDate>Tue, 23 Jul 2013 21:13:14 -0500</pubDate>
       
-      <guid>/2020_stri_introR/tags/r-markdown/</guid>
+      <guid>/courses/2020_stri_introR/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>regression</title>
-      <link>/2020_stri_introR/tags/regression/</link>
+      <link>/courses/2020_stri_introR/tags/regression/</link>
       <pubDate>Tue, 23 Jul 2013 21:13:14 -0500</pubDate>
       
-      <guid>/2020_stri_introR/tags/regression/</guid>
+      <guid>/courses/2020_stri_introR/tags/regression/</guid>
       <description></description>
     </item>
     

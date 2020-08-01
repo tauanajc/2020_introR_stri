@@ -15,9 +15,9 @@ Always begin by setting the working directory (the folder on your computer where
 <meta property="og:description" content="Functions, loops, and if/else statements  Getting started Remember everything in a line after the # sign is comments that will not be run. Look in these comments for practice exercises for the tutorial, which will be marked #Practice
 Always begin by setting the working directory (the folder on your computer where R will read and write data files) I like to start by asking R for the current working directory to remind me of the correct formatting">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://tauanacunha.com/courses/2020_stri_introR/tutorials/l2_flowcontrol/">
-        <link rel="stylesheet" href="https://tauanacunha.com/courses/2020_stri_introR/dist/site.css">
-        <link rel="stylesheet" href="https://tauanacunha.com/courses/2020_stri_introR/dist/syntax.css">
+<meta property="og:url" content="/courses/2020_stri_intror/tutorials/l2_flowcontrol/">
+        <link rel="stylesheet" href="/courses/2020_stri_intror/dist/site.css">
+        <link rel="stylesheet" href="/courses/2020_stri_intror/dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
@@ -34,10 +34,10 @@ Always begin by setting the working directory (the folder on your computer where
                     <div class="site-title-wrapper">
                         
                             <h1 class="site-title">
-                                <a title="Tutorials" href="https://tauanacunha.com/courses/2020_stri_introR/">Tutorials</a>
+                                <a title="Tutorials" href="/courses/2020_stri_intror/">Tutorials</a>
                             </h1>
                         
-                        <a class="button-square" href="https://tauanacunha.com/courses/2020_stri_introR/index.xml"><i class="fa fa-rss"></i></a>
+                        <a class="button-square" href="/courses/2020_stri_intror/index.xml"><i class="fa fa-rss"></i></a>
                         
                         
                         
@@ -51,15 +51,15 @@ Always begin by setting the working directory (the folder on your computer where
                     <ul class="site-nav">
                         
     <li class="site-nav-item">
-        <a title="Home" href="/courses/2020_stri_introR/">Home</a>
+        <a title="Home" href="/courses/2020_stri_intror/">Home</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Schedule" href="/courses/2020_stri_introR/page/schedule/">Schedule</a>
+        <a title="Schedule" href="/courses/2020_stri_intror/page/schedule/">Schedule</a>
     </li>
 
     <li class="site-nav-item">
-        <a title="Resources" href="/courses/2020_stri_introR/page/resources/">Resources</a>
+        <a title="Resources" href="/courses/2020_stri_intror/page/resources/">Resources</a>
     </li>
 
     <li class="site-nav-item">
@@ -385,10 +385,10 @@ summary(AP.Zn.model)</code></pre>
 <p>Regression assumes residuals are normally distributed - here are two ways of checking that.
 A histogram of the residuals should approximate a bell curve</p>
 <pre class="r"><code>hist(AP.Zn.model$residuals)</code></pre>
-<p><img src="/courses/2020_stri_introR/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="/courses/2020_stri_intror/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 <p>A normal quantile-quantile plot should approximate a 1:1 line.</p>
 <pre class="r"><code>qqnorm(AP.Zn.model$residuals)</code></pre>
-<p><img src="/courses/2020_stri_introR/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p><img src="/courses/2020_stri_intror/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 <p>Does log-transformation help?</p>
 <pre class="r"><code>apznlog &lt;- with(mydata[mydata$Species==&quot;AP&quot;,], lm(log10(Zn.leaf)~log10(Zn.soil)))
 summary(apznlog)</code></pre>
@@ -412,9 +412,9 @@ summary(apznlog)</code></pre>
 ## Multiple R-squared:  0.6438, Adjusted R-squared:  0.6311 
 ## F-statistic: 50.61 on 1 and 28 DF,  p-value: 9.689e-08</code></pre>
 <pre class="r"><code>hist(apznlog$residuals)</code></pre>
-<p><img src="/courses/2020_stri_introR/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p><img src="/courses/2020_stri_intror/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
 <pre class="r"><code>qqnorm(apznlog$residuals)</code></pre>
-<p><img src="/courses/2020_stri_introR/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-32-2.png" width="672" /></p>
+<p><img src="/courses/2020_stri_intror/tutorials/L2_FlowControl_files/figure-html/unnamed-chunk-32-2.png" width="672" /></p>
 <pre class="r"><code>#Yes, somewhat.  </code></pre>
 <p>Moving back toward our table… From the model summary, we want to pull the parameter estimate (slope of the relationship) to determine whether the relationship is positive or negative, and the P-value to determine whether it is statistically significant. Let’s figure out how to call them.</p>
 <pre class="r"><code>#Give the summary a shorter, easier name
@@ -687,7 +687,7 @@ summary(eszn)</code></pre>
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=Tutorial%202%20-%20Flow%20Control&url=https%3a%2f%2ftauanacunha.com%2fcourses%2f2020_stri_introR%2ftutorials%2fl2_flowcontrol%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=Tutorial%202%20-%20Flow%20Control&url=%2fcourses%2f2020_stri_intror%2ftutorials%2fl2_flowcontrol%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter"></i>
                 <span class="hidden">Twitter</span>
@@ -695,7 +695,7 @@ summary(eszn)</code></pre>
         
 
         
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftauanacunha.com%2fcourses%2f2020_stri_introR%2ftutorials%2fl2_flowcontrol%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fcourses%2f2020_stri_intror%2ftutorials%2fl2_flowcontrol%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fa fa-facebook"></i>
                 <span class="hidden">Facebook</span>
@@ -716,7 +716,7 @@ summary(eszn)</code></pre>
             <div class="container">
                 <div class="site-title-wrapper">
                     <h1 class="site-title">
-                        <a title="Tutorials" href="https://tauanacunha.com/courses/2020_stri_introR/">Tutorials</a>
+                        <a title="Tutorials" href="/courses/2020_stri_intror/">Tutorials</a>
                     </h1>
                     <a class="button-square button-jump-top js-jump-top" href="#">
                         <i class="fa fa-angle-up"></i>
@@ -733,9 +733,9 @@ summary(eszn)</code></pre>
             </div>
         </footer>
 
-        <script src="https://tauanacunha.com/courses/2020_stri_introR/js/jquery-1.11.3.min.js"></script>
-        <script src="https://tauanacunha.com/courses/2020_stri_introR/js/jquery.fitvids.js"></script>
-        <script src="https://tauanacunha.com/courses/2020_stri_introR/js/scripts.js"></script>
+        <script src="/courses/2020_stri_intror/js/jquery-1.11.3.min.js"></script>
+        <script src="/courses/2020_stri_intror/js/jquery.fitvids.js"></script>
+        <script src="/courses/2020_stri_intror/js/scripts.js"></script>
     </body>
 </html>
 
